@@ -3,7 +3,7 @@ export const queryClient = new QueryClient();
 
 export async function fetchEvents({ signal, searchTerm, max }) {
   //console.log(searchTerm);
-  let url = "https://backend-6ihlhmycoa-ue.a.run.app/events";
+  let url = "https://reactevents-420619.ue.r.appspot.com/events";
 
   if (searchTerm && max) {
     url += '?search=' + searchTerm + '&max=' + max;
@@ -28,7 +28,7 @@ export async function fetchEvents({ signal, searchTerm, max }) {
 }
 
 export async function createNewEvent(eventData) {
-  const response = await fetch(`https://backend-6ihlhmycoa-ue.a.run.app/events`, {
+  const response = await fetch(`https://reactevents-420619.ue.r.appspot.com/events`, {
     method: "POST",
     body: JSON.stringify(eventData),
     headers: {
@@ -48,7 +48,7 @@ export async function createNewEvent(eventData) {
   return event;
 }
 export async function fetchSelectableImages({ signal }) {
-  const response = await fetch(`https://backend-6ihlhmycoa-ue.a.run.app/events/images`, {
+  const response = await fetch(`https://reactevents-420619.ue.r.appspot.com/events/images`, {
     signal,
   });
 
@@ -65,7 +65,7 @@ export async function fetchSelectableImages({ signal }) {
 }
 
 export async function fetchEvent({ id, signal }) {
-  const response = await fetch(`https://backend-6ihlhmycoa-ue.a.run.app/events/${id}`, {
+  const response = await fetch(`https://reactevents-420619.ue.r.appspot.com/events/${id}`, {
     signal,
   });
 
@@ -82,7 +82,7 @@ export async function fetchEvent({ id, signal }) {
 }
 
 export async function deleteEvent({ id }) {
-  const response = await fetch(`https://backend-6ihlhmycoa-ue.a.run.app/events/${id}`, {
+  const response = await fetch(`https://reactevents-420619.ue.r.appspot.com/events/${id}`, {
     method: "DELETE",
   });
 
@@ -97,7 +97,7 @@ export async function deleteEvent({ id }) {
 }
 
 export async function updateEvent({ id, event }) {
-  const response = await fetch(`https://backend-6ihlhmycoa-ue.a.run.app/events/${id}`, {
+  const response = await fetch(`https://reactevents-420619.ue.r.appspot.com/events/${id}`, {
     method: "PUT",
     body: JSON.stringify({ event }),
     headers: {

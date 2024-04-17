@@ -70,7 +70,7 @@ export default function EventDetails() {
           </nav>
         </header>
         <div id="event-details-content">
-          <img src={`https://backend-6ihlhmycoa-ue.a.run.app/${data.image}`} alt={data.title} />
+          <img src={`https://reactevents-420619.ue.r.appspot.com/${data.image}`} alt={data.title} />
           <div id="event-details-info">
             <div>
               <p id="event-details-location">{data.location}</p>

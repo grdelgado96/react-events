@@ -10,7 +10,7 @@ export default function ImagePicker({ images, selectedImage, onSelect }) {
             className={selectedImage === image.path ? 'selected' : undefined}
           >
             <img
-              src={`https://backend-6ihlhmycoa-ue.a.run.app/${image.path}`}
+              src={`https://reactevents-420619.ue.r.appspot.com/${image.path}`}
               alt={image.caption}
             />
           </li>

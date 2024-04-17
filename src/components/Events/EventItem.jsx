@@ -8,7 +8,7 @@ export default function EventItem({ event }) {
   });
   return (
     <article className="event-item">
-      <img src={`https://backend-6ihlhmycoa-ue.a.run.app/${event.image}`} alt={event.title} />
+      <img src={`https://reactevents-420619.ue.r.appspot.com/${event.image}`} alt={event.title} />
       <div className="event-item-content">
         <div>
           <h2>{event.title}</h2>
